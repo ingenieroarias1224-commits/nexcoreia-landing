@@ -532,7 +532,11 @@ footer{background:var(--bg2);border-top:1px solid var(--bord);padding:46px 5% 26
 </head>
 <body>
 
-<a href="https://wa.me/573008339461" target="_blank" rel="noopener" class="wa-float">
+<a href="https://wa.me/573008339461" 
+   target="_blank" 
+   rel="noopener" 
+   class="wa-float"
+   onclick="gtag('event','click_whatsapp')">
   <span>💬</span><span class="wa-tip">WhatsApp NexcoreIA</span>
 </a>
 
@@ -548,7 +552,9 @@ footer{background:var(--bg2);border-top:1px solid var(--bord);padding:46px 5% 26
     <a href="#calculadora">Calculadora</a>
     <a href="#precios">Precios</a>
     <a href="#contacto">Contacto</a>
-    <a href="https://app.nexcoreia.co/login" class="nav-cta">Ingresar →</a>
+    <button onclick="gtag('event','click_ingresar')">
+  Ingresar
+</button>
   </div>
   <button class="nav-mobile" onclick="toggleNav()">☰</button>
 </nav>
